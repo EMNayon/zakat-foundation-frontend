@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>As-Sunnah Foundation</title>
     
-    <!-- External Styles and Fonts -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+  <!-- External Styles and Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
 </head>
 <body>
     <!-- Header Section -->
@@ -17,11 +18,11 @@
         <div class="container">
             <!-- Social Icons and Language Selection -->
             <div class="d-flex justify-content-end align-items-center">
-                <div class="social-icons">
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
-                    <a href="#"><i class="fa-solid fa-phone"></i></a>
+                <div class="social-icons me-3 ">
+                    <a class="text-primary me-2" href="#"><i class="fa-brands fa-facebook fs-5"></i></a>
+                    <a class="text-danger me-2" href="#"><i class="fa-brands fa-youtube fs-5"></i></a>
+                    <a class="text-warning me-2" href="#"><i class="fa-solid fa-envelope fs-5"></i></a>
+                    <a class="text-info me-2" href="#"><i class="fa-solid fa-phone fs-5"></i></a>
                 </div>
                 <div class="btn-group">
                     <button class="btn btn-outline-secondary">EN</button>
@@ -46,11 +47,11 @@
         </div>
 
          <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-md navbar-dark d-lg-block d-none mt-2 ">
+    <nav class="navbar navbar-expand-md d-lg-block d-none mt-2 " style="background-color: var( --navbar-dark);">
         <div class="container">
             <div class="collapse navbar-collapse justify-content-center">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" href="#">হোম</a></li>
+                    <li class="nav-item"><a class="nav-link active text-white" href="#">হোম</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">আমাদের সম্পর্কে</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">আমাদের কার্যক্রম</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">চলমান প্রকল্প</a></li>
@@ -67,12 +68,12 @@
     </header>
 
 <!-- Body Content -->
-<div class="Contentbody p-5">
-    <div class="container">
-        <div class="p-5 border rounded bg-white shadow-sm">
-            <div class="row g-3 align-items-center">
+<div class="  p-lg-5 p-2" style="background-color: var(--background-color);">
+    <div class="container ">
+        <div class="p-1">
+            <div class="row  align-items-center mt-md-5 mt-2 border rounded bg-white shadow-sm p-lg-5 p-3">
                 <!-- Dropdown -->
-                <div class="col-lg-2 col-md-6">
+                <div class="col-lg-2 col-md-6 ">
                     <select class="form-select">
                         <option selected>অনুদানের ধরন</option>
                         <option value="1">সাধারণ দান</option>
@@ -82,7 +83,7 @@
                 </div>
 
                 <!-- Phone/Email with Icon -->
-                <div class="col-lg-2 col-md-6 position-relative">
+                <div class="col-lg-2 col-md-6 position-relative mt-2 mt-lg-0">
                     <input type="text" class="form-control" placeholder="ফোন / ইমেইল">
                     <span class="position-absolute top-50 end-0 translate-middle-y me-3">
                         <i class="fa-solid fa-circle-info text-muted"></i>
@@ -90,27 +91,26 @@
                 </div>
 
                 <!-- Amount Input -->
-                <div class="col-lg-2 col-md-6">
+                <div class="col-lg-2 col-md-6 mt-2 mt-lg-0">
                     <input type="text" class="form-control" placeholder="অনুদানের পরিমাণ">
                 </div>
 
                 <!-- Donate Button -->
-                <div class="col-lg-2 col-md-6 text-md-start text-center">
-                    <button class="btn btn-success w-100">দান করুন</button>
+                <div class="col-lg-2 col-md-6 text-md-start text-center mt-2 mt-lg-0">
+                    <button class="btn w-100 text-white" style="background-color: var(--primary-color);">দান করুন</button>
                 </div>
-            </div>
-
-            <!-- Additional Text -->
-            <div class="text-center mt-3">
+                   <!-- Additional Text -->
+            <div class="text-center mt-3 ">
                 <small>
                     আস-সুন্নাহ ফাউন্ডেশনে দান করলে সওয়াব পাবে।
-                    <a href="#" class="text-success text-decoration-none">বিস্তারিত জানতে ক্লিক করুন।</a>
+                    <a href="#" class="text-decoration-none" style="color: var(--link-color);">বিস্তারিত জানতে ক্লিক করুন।</a>
                 </small>
+            </div>
             </div>
         </div>
 
 
-        <div id="carouselExampleSlidesOnly" class="carousel slide mt-5 " data-bs-ride="carousel">
+        <div id="carouselExampleSlidesOnly" class="carousel slide mt-lg-5 mt-3 " data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="assets\images\sliderimage.png" class="d-block w-100 border rounded" alt="...">
@@ -134,7 +134,7 @@
                 <img src="assets/images/about.png" class="img-fluid" alt="">
             </div>
             <div class="col-md-7">
-                <h2 style="color: rgb(0, 142, 72);">আমাদের সম্পর্কে</h2>
+                <h2 style="color: var(--link-color);">আমাদের সম্পর্কে</h2>
                 <hr style="height: 3px; background-color: black; border: none;">
                 <p>আস-সুন্নাহ ফাউন্ডেশন একটি অলাভজনক সংগঠন। এটি একটি সামাজিক সংগঠন যা 
                     সামাজিক সেবা প্রদান করে। এটি একটি অলাভজনক সংগঠন যা সামাজিক সেবা প্রদান করে। 
@@ -152,27 +152,385 @@
     </div>
 
 </div>
+
+<div style="background-color: var(--background-color);">
+    <div class="container p-1">
+        <h5 class="text-center mt-4 mb-5">চলুন একসাথে একটি পরিবর্তন আনি</h5>
+
+        <div class="row g-3">
+            <div class="col-lg-4 col-md-6" >
+                <div class="rounded bg-white border">
+                    <img src="assets\images\onudan.png" alt="" class="img-fluid">
+                <div class="p-4">
+                <h4 class="text-center mb-3" style="color: var(--text-color);">মাসিক অনুদান তহবিল</h4>
+                <p>অনেকে নিয়মিত দান করতে চান, কিন্তু মনে থাকে না বলে দান করা হয়ে ওঠে না। 
+                    এখন থেকে বিকাশ এবং নগদ অ্যাপ ব্যবহারকারীরা আস-সুন্নাহ ফাউন্ডেশনের ওয়েবসাইট 
+                    থেকে স্বয়ংক্রিয় পদ্ধতি চালু করে নিয়মিত দান করতে পারবেন। আমাদের ওয়েবসাইটে গিয়ে....</p>
+                    <button class="btn  w-100 text-white" style="background-color: var(--primary-color);">দান করুন</button>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" >
+                <div class="rounded bg-white border">
+                    <img src="assets\images\onudan.png" alt="" class="img-fluid">
+                <div class="p-4">
+                <h4 class="text-center mb-3" style="color: var(--text-color);">মাসিক অনুদান তহবিল</h4>
+                <p>অনেকে নিয়মিত দান করতে চান, কিন্তু মনে থাকে না বলে দান করা হয়ে ওঠে না। 
+                    এখন থেকে বিকাশ এবং নগদ অ্যাপ ব্যবহারকারীরা আস-সুন্নাহ ফাউন্ডেশনের ওয়েবসাইট 
+                    থেকে স্বয়ংক্রিয় পদ্ধতি চালু করে নিয়মিত দান করতে পারবেন। আমাদের ওয়েবসাইটে গিয়ে....</p>
+                    <button class="btn  w-100 text-white" style="background-color: var(--primary-color);">দান করুন</button>
+                </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 " >
+                <div class="rounded bg-white border">
+                    <img src="assets\images\onudan.png" alt="" class="img-fluid">
+                <div class="p-4">
+                <h4 class="text-center mb-3" style="color: var(--text-color);">মাসিক অনুদান তহবিল</h4>
+                <p>অনেকে নিয়মিত দান করতে চান, কিন্তু মনে থাকে না বলে দান করা হয়ে ওঠে না। 
+                    এখন থেকে বিকাশ এবং নগদ অ্যাপ ব্যবহারকারীরা আস-সুন্নাহ ফাউন্ডেশনের ওয়েবসাইট 
+                    থেকে স্বয়ংক্রিয় পদ্ধতি চালু করে নিয়মিত দান করতে পারবেন। আমাদের ওয়েবসাইটে গিয়ে....</p>
+                    <button class="btn  w-100 text-white" style="background-color: var(--primary-color);">দান করুন</button>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 " >
+                <div class="rounded bg-white border">
+                    <img src="assets\images\onudan.png" alt="" class="img-fluid">
+                <div class="p-4">
+                <h4 class="text-center mb-3" style="color: var(--text-color);">মাসিক অনুদান তহবিল</h4>
+                <p>অনেকে নিয়মিত দান করতে চান, কিন্তু মনে থাকে না বলে দান করা হয়ে ওঠে না। 
+                    এখন থেকে বিকাশ এবং নগদ অ্যাপ ব্যবহারকারীরা আস-সুন্নাহ ফাউন্ডেশনের ওয়েবসাইট 
+                    থেকে স্বয়ংক্রিয় পদ্ধতি চালু করে নিয়মিত দান করতে পারবেন। আমাদের ওয়েবসাইটে গিয়ে....</p>
+                    <button class="btn  w-100 text-white" style="background-color: var(--primary-color);">দান করুন</button>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 " >
+                <div class="rounded bg-white border">
+                    <img src="assets\images\onudan.png" alt="" class="img-fluid">
+                <div class="p-4">
+                <h4 class="text-center mb-3" style="color: var(--text-color);">মাসিক অনুদান তহবিল</h4>
+                <p>অনেকে নিয়মিত দান করতে চান, কিন্তু মনে থাকে না বলে দান করা হয়ে ওঠে না। 
+                    এখন থেকে বিকাশ এবং নগদ অ্যাপ ব্যবহারকারীরা আস-সুন্নাহ ফাউন্ডেশনের ওয়েবসাইট 
+                    থেকে স্বয়ংক্রিয় পদ্ধতি চালু করে নিয়মিত দান করতে পারবেন। আমাদের ওয়েবসাইটে গিয়ে....</p>
+                    <button class="btn  w-100 text-white" style="background-color: var(--primary-color);">দান করুন</button>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 " >
+                <div class="rounded bg-white border">
+                    <img src="assets\images\onudan.png" alt="" class="img-fluid">
+                <div class="p-4">
+                <h4 class="text-center mb-3" style="color: var(--text-color);">মাসিক অনুদান তহবিল</h4>
+                <p>অনেকে নিয়মিত দান করতে চান, কিন্তু মনে থাকে না বলে দান করা হয়ে ওঠে না। 
+                    এখন থেকে বিকাশ এবং নগদ অ্যাপ ব্যবহারকারীরা আস-সুন্নাহ ফাউন্ডেশনের ওয়েবসাইট 
+                    থেকে স্বয়ংক্রিয় পদ্ধতি চালু করে নিয়মিত দান করতে পারবেন। আমাদের ওয়েবসাইটে গিয়ে....</p>
+                    <button class="btn  w-100 text-white" style="background-color: rgb(0, 142, 72);">দান করুন</button>
+                </div>
+                </div>
+            </div>
+
+            <button class="btn text-white w-25 d-block mx-auto mb-4" style="background-color: var(--primary-color);">আরও</button>
+
+        </div>
+    </div>
+
+</div>
+
+
+<div class="RunningProject mt-5">
+    <h5 class="text-center mt-4 mb-5">চলমান প্রজেক্ট</h5>
+    <div class="container">
+        <div class="row g-3 d-flex justify-content-center">
+            <div class="col-lg-4 col-md-6 " >
+                <div class="rounded bg-white border">
+                    <img src="assets\images\runningproject.png" alt="" class="img-fluid">
+                <div class="p-4">
+                <h4 class="text-center mb-3" style="color: var(--text-color);">ইফতার বিতরণ-২০২৫</h4>
+                <p>অনেকে নিয়মিত দান করতে চান, কিন্তু মনে থাকে না বলে দান করা হয়ে ওঠে না। 
+                    এখন থেকে বিকাশ এবং নগদ অ্যাপ ব্যবহারকারীরা আস-সুন্নাহ ফাউন্ডেশনের ওয়েবসাইট 
+                    থেকে স্বয়ংক্রিয় পদ্ধতি চালু করে নিয়মিত দান করতে পারবেন। আমাদের ওয়েবসাইটে গিয়ে....</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 " >
+                <div class="rounded bg-white border">
+                    <img src="assets\images\runningproject.png" alt="" class="img-fluid">
+                <div class="p-4">
+                <h4 class="text-center mb-3" style="color: var(--text-color);">ইফতার বিতরণ-২০২৫</h4>
+                <p>অনেকে নিয়মিত দান করতে চান, কিন্তু মনে থাকে না বলে দান করা হয়ে ওঠে না। 
+                    এখন থেকে বিকাশ এবং নগদ অ্যাপ ব্যবহারকারীরা আস-সুন্নাহ ফাউন্ডেশনের ওয়েবসাইট 
+                    থেকে স্বয়ংক্রিয় পদ্ধতি চালু করে নিয়মিত দান করতে পারবেন। আমাদের ওয়েবসাইটে গিয়ে....</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 " >
+                <div class="rounded bg-white border">
+                    <img src="assets\images\runningproject.png" alt="" class="img-fluid">
+                <div class="p-4">
+                <h4 class="text-center mb-3" style="color: var(--text-color);">ইফতার বিতরণ-২০২৫</h4>
+                <p>অনেকে নিয়মিত দান করতে চান, কিন্তু মনে থাকে না বলে দান করা হয়ে ওঠে না। 
+                    এখন থেকে বিকাশ এবং নগদ অ্যাপ ব্যবহারকারীরা আস-সুন্নাহ ফাউন্ডেশনের ওয়েবসাইট 
+                    থেকে স্বয়ংক্রিয় পদ্ধতি চালু করে নিয়মিত দান করতে পারবেন। আমাদের ওয়েবসাইটে গিয়ে....</p>
+                </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 me-lg-5" >
+                <div class="rounded bg-white border">
+                    <img src="assets\images\runningproject.png" alt="" class="img-fluid">
+                <div class="p-4">
+                <h4 class="text-center mb-3" style="color: var(--text-color);">ইফতার বিতরণ-২০২৫</h4>
+                <p>অনেকে নিয়মিত দান করতে চান, কিন্তু মনে থাকে না বলে দান করা হয়ে ওঠে না। 
+                    এখন থেকে বিকাশ এবং নগদ অ্যাপ ব্যবহারকারীরা আস-সুন্নাহ ফাউন্ডেশনের ওয়েবসাইট 
+                    থেকে স্বয়ংক্রিয় পদ্ধতি চালু করে নিয়মিত দান করতে পারবেন। আমাদের ওয়েবসাইটে গিয়ে....</p>
+                </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 mb-4" >
+                <div class="rounded bg-white border">
+                    <img src="assets\images\runningproject.png" alt="" class="img-fluid">
+                <div class="p-4">
+                <h4 class="text-center mb-3" style="color: var(--text-color);">ইফতার বিতরণ-২০২৫</h4>
+                <p>অনেকে নিয়মিত দান করতে চান, কিন্তু মনে থাকে না বলে দান করা হয়ে ওঠে না। 
+                    এখন থেকে বিকাশ এবং নগদ অ্যাপ ব্যবহারকারীরা আস-সুন্নাহ ফাউন্ডেশনের ওয়েবসাইট 
+                    থেকে স্বয়ংক্রিয় পদ্ধতি চালু করে নিয়মিত দান করতে পারবেন। আমাদের ওয়েবসাইটে গিয়ে....</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     
 
 
+<div style="background-color: var(--background-color);">
+    <div class="container p-1">
+        <h5 class="text-center mt-4 mb-5">সাম্প্রতিক সংবাদ</h5>
+        <div class="row mt-5 mb-3 g-3">
+            <div class="col-lg-4 col-md-6">
+                <div class="rounded bg-white  " style="padding: 12px;">
+                    <img src="assets/images/currentnews.png" alt="" class="img-fluid rounded">
+                    <h6 class="mt-1">৩০/১০/২০২৪, ১১:৩৩:৩৬ AM</h6>
+                    <h6>১০৯ এতিমসহ ৩০০ শহীদ পরিবারের পাশে আস-সুন্নাহ ফাউন্ডেশন</h6>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="rounded bg-white  " style="padding: 12px;">
+                    <img src="assets/images/currentnews.png" alt="" class="img-fluid rounded">
+                    <h6 class="mt-1">৩০/১০/২০২৪, ১১:৩৩:৩৬ AM</h6>
+                    <h6>১০৯ এতিমসহ ৩০০ শহীদ পরিবারের পাশে আস-সুন্নাহ ফাউন্ডেশন</h6>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="rounded bg-white  " style="padding: 12px;">
+                    <img src="assets/images/currentnews.png" alt="" class="img-fluid rounded">
+                    <h6 class="mt-1">৩০/১০/২০২৪, ১১:৩৩:৩৬ AM</h6>
+                    <h6>১০৯ এতিমসহ ৩০০ শহীদ পরিবারের পাশে আস-সুন্নাহ ফাউন্ডেশন</h6>
+                </div>
+            </div>
+            <div>
+                <button class="btn text-white w-25 d-block mx-auto mb-4 mt-3" style="background-color: var(--primary-color);">আরও</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="ourwork">
+    <div class="container">
+        <h5 class="text-center mt-4 mb-5">আমাদের কার্যক্রম</h5>
+        <div class="row g-3">
+            <div class="col-lg-4 col-md-6 ">
+                <div class="rounded border p-3 " style="background: var(--ourwork-bg1);">
+                    <h1 class="text-center mb-3 mt-4 text-white  ">যাকাতের অর্থে স্বাবলম্বীকরণ প্রকল্প</h1>
+                    <p class="mt-5  text-center text-white" style="font-size: 18px;">আস-সুন্নাহ ফাউন্ডেশন কুরআন ও সুন্নাহর এ বিধান বাস্তবায়নকল্পে ‘আর্থসামাজিক উন্নয়ন ও 
+                        সবার জন্য শিক্ষা’ এই শ্লোগান ধারণ করে শিক্ষামূলক বিভিন্ন কার্যকর উদ্যোগ গ্রহণ করেছে।</p>
+                        <button class="btn text-white d-block mx-auto mb-4  " style="background-color: var(--primary-color); margin-top: 100px;">বিস্তারিত দেখুন</button>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 ">
+                <div class="rounded border p-3 " style="background: var(--ourwork-bg2);">
+                    <h1 class="text-center mb-3 mt-4 text-white  ">যাকাতের অর্থে স্বাবলম্বীকরণ প্রকল্প</h1>
+                    <p class="mt-5  text-center text-white" style="font-size: 18px;">আস-সুন্নাহ ফাউন্ডেশন কুরআন ও সুন্নাহর এ বিধান বাস্তবায়নকল্পে ‘আর্থসামাজিক উন্নয়ন ও 
+                        সবার জন্য শিক্ষা’ এই শ্লোগান ধারণ করে শিক্ষামূলক বিভিন্ন কার্যকর উদ্যোগ গ্রহণ করেছে।</p>
+                        <button class="btn text-white d-block mx-auto mb-4  " style="background-color: var(--primary-color); margin-top: 100px;">বিস্তারিত দেখুন</button>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 ">
+                <div class="rounded border p-3 " style="background: var(--ourwork-bg2);">
+                    <h1 class="text-center mb-3 mt-4 text-white  ">যাকাতের অর্থে স্বাবলম্বীকরণ প্রকল্প</h1>
+                    <p class="mt-5  text-center text-white" style="font-size: 18px;">আস-সুন্নাহ ফাউন্ডেশন কুরআন ও সুন্নাহর এ বিধান বাস্তবায়নকল্পে ‘আর্থসামাজিক উন্নয়ন ও 
+                        সবার জন্য শিক্ষা’ এই শ্লোগান ধারণ করে শিক্ষামূলক বিভিন্ন কার্যকর উদ্যোগ গ্রহণ করেছে।</p>
+                        <button class="btn text-white d-block mx-auto mb-4  " style="background-color: var(--primary-color); margin-top: 100px;">বিস্তারিত দেখুন</button>
+                </div>
+            </div>
+            <div>
+                <button class="btn text-white w-25 d-block mx-auto mb-4 mt-3" style="background-color: var(--primary-color);">আরও</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div style="background-color: var(--background-color);">
+    <div class="container p-1">
+        <h5 class="text-center mt-4 ">প্রতিবেদন</h5>
+        <div class="row mt-3 mb-3 g-3">
+            <div class="col-lg-4 col-md-6">
+                <iframe class="rounded" width="100%" height="200" 
+                    src="https://www.youtube.com/embed/wKV4pZrep6E"
+                    title="YouTube video player" frameborder="0" allowfullscreen>
+                </iframe>
+                <h6 class="text-center mt-3">প্রথম বারের মতো অর্ধশতাধিক শীতবস্ত্র বিতরণ</h6>
+            </div>
+        
+            <div class="col-lg-4 col-md-6">
+                <iframe class="rounded" width="100%" height="200" 
+                    src="https://www.youtube.com/embed/6w4SCAnPxS8"
+                    title="YouTube video player" frameborder="0" allowfullscreen>
+                </iframe>
+                <h6 class="text-center mt-3">প্রথম বারের মতো অর্ধশতাধিক শীতবস্ত্র বিতরণ</h6>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <iframe class="rounded" width="100%" height="200" 
+                    src="https://www.youtube.com/embed/T4VIMchyz34"
+                    title="YouTube video player" frameborder="0" allowfullscreen>
+                </iframe>
+                <h6 class="text-center mt-3">প্রথম বারের মতো অর্ধশতাধিক শীতবস্ত্র বিতরণ</h6>
+            </div>
+        </div>
+        <!-- More Button -->
+        <div class="text-center mt-4">
+            <button class="btn text-white w-25 d-block mx-auto mb-4 mt-3" 
+                style="background-color: var(--primary-color);">আরও</button>
+        </div>
+    </div>
+</div>
 
 
 
 
 
 
+<!-- Gallery -->
+<div class="container mt-3">
+    <h5 class="text-center mb-4">গ্যালারী</h5>
+    <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+            <div class="position-relative overflow-hidden rounded" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal">
+                <img src="assets\images\Gallery.png" alt="Preview Image" class="w-100">
+                <div class="hover-overlay">
+                    <i class="fa-solid fa-eye fs-3 mb-2"></i>
+                    <span>Preview</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+            <div class="position-relative overflow-hidden rounded" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal">
+                <img src="assets\images\currentnews.png" alt="Preview Image" class="w-100">
+                <div class="hover-overlay">
+                    <i class="fa-solid fa-eye fs-3 mb-2"></i>
+                    <span>Preview</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+            <div class="position-relative overflow-hidden rounded" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal">
+                <img src="assets\images\Gallery.png" alt="Preview Image" class="w-100">
+                <div class="hover-overlay">
+                    <i class="fa-solid fa-eye fs-3 mb-2"></i>
+                    <span>Preview</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="position-relative overflow-hidden rounded" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal">
+                <img src="assets\images\currentnews.png" alt="Preview Image" class="w-100">
+                <div class="hover-overlay">
+                    <i class="fa-solid fa-eye fs-3 mb-2"></i>
+                    <span>Preview</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+            <div class="position-relative overflow-hidden rounded" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal">
+                <img src="assets\images\Gallery.png" alt="Preview Image" class="w-100">
+                <div class="hover-overlay">
+                    <i class="fa-solid fa-eye fs-3 mb-2"></i>
+                    <span>Preview</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+            <div class="position-relative overflow-hidden rounded" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal">
+                <img src="assets\images\currentnews.png" alt="Preview Image" class="w-100">
+                <div class="hover-overlay">
+                    <i class="fa-solid fa-eye fs-3 mb-2"></i>
+                    <span>Preview</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-3 col-md-6">
+            <div class="position-relative overflow-hidden rounded" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal">
+                <img src="assets\images\Gallery.png" alt="Preview Image" class="w-100">
+                <div class="hover-overlay">
+                    <i class="fa-solid fa-eye fs-3 mb-2"></i>
+                    <span>Preview</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-3 col-md-6">
+            <div class="position-relative overflow-hidden rounded" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal">
+                <img src="assets\images\Gallery.png" alt="Preview Image" class="w-100">
+                <div class="hover-overlay">
+                    <i class="fa-solid fa-eye fs-3 mb-2"></i>
+                    <span>Preview</span>
+                </div>
+            </div>
+        </div>
+            <!-- More Button -->
+            <div class="text-center mt-3">
+                <button class="btn text-white w-25 d-block mx-auto mb-4 mt-3" 
+                    style="background-color: var(--primary-color);">আরও</button>
+            </div>
+    </div>
+</div>
 
 
 
 
-
-
-
-
-
-
-
-
+<footer class="footer text-center py-3 border-top">
+    <p class="mb-1">বন্ধু © 2025 <a class="text-decoration-none" href="#" style="color: var(--primary-color);">আস-সুন্নাহ ফাউন্ডেশন</a> - সর্ব স্বত্ব সংরক্ষিত। কারিগরি সহায়তায় 
+    <a href="#" style="color: var(--primary-color);" class="text-decoration-none">কোয়ান্টিক ডায়নামিক্স</a>।</p>
+    <p class="mb-0">
+        <a href="#" class="text-decoration-none" style="color: var(--primary-color);">পরিবেশের শর্তাবলী</a> | <a class="text-decoration-none" href="#" style="color: var(--primary-color);">গোপনীয়তা নীতি</a>
+    </p>
+</footer>
 
 
 
@@ -196,6 +554,31 @@
             </nav>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Gallery Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+    <nav class="navbar navbar-dark bg-dark p-2">
+        <div class="container-fluid d-flex justify-content-end">
+            <button class="btn btn-sm text-white" onclick="rotateImage(-90)"><i class="fa-solid fa-rotate-left"></i></button>
+            <button class="btn btn-sm text-white" onclick="rotateImage(90)"><i class="fa-solid fa-rotate-right"></i></button>
+            <button class="btn btn-sm text-white" onclick="zoomImage(0.1)"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+            <button class="btn btn-sm text-white" onclick="zoomImage(-0.1)"><i class="fa-solid fa-magnifying-glass-minus"></i></button>
+            <button class="btn btn-sm text-white" data-bs-dismiss="modal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+    </nav>
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-transparent border-0">
+            <div class="modal-body text-center p-0">
+                <img id="previewImage" src="assets/images/currentnews.png" class="img-fluid" alt="Full Preview">
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="assets/js/main.js"></script>
 </body>
 </html>

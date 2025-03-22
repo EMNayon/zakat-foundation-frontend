@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>As-Sunnah Foundation</title>
+    
+    <!-- External Styles and Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="mt-2">
+        <div class="container">
+            <!-- Social Icons and Language Selection -->
+            <div class="d-flex justify-content-end align-items-center">
+                <div class="social-icons me-3">
+                    <a class="text-primary me-2" href="#"><i class="fa-brands fa-facebook fs-5"></i></a>
+                    <a class="text-danger me-2" href="#"><i class="fa-brands fa-youtube fs-5"></i></a>
+                    <a class="text-warning me-2" href="#"><i class="fa-solid fa-envelope fs-5"></i></a>
+                    <a class="text-info me-2" href="#"><i class="fa-solid fa-phone fs-5"></i></a>
+                </div>
+                <div class="btn-group">
+                    <button class="btn btn-outline-secondary">EN</button>
+                    <button class="btn btn-success text-white">বাংলা</button>
+                </div>
+            </div>
+            
+            <!-- Logo and Navigation Buttons -->
+            <div class="d-flex flex-wrap align-items-center mt-2">
+                <a class="btn btn-light d-lg-none me-2" data-bs-toggle="offcanvas" href="#offcanvasExample">
+                    <i class="fa-solid fa-bars text-dark"></i>
+                </a>
+                <div class="logo">
+                    <img src="assets/images/logo.png" alt="As-Sunnah Foundation" class="img-fluid">
+                </div>
+                <div class="d-flex flex-wrap ms-auto">
+                    <button class="btn btn-custom btn-sm">আমার একাউন্ট</button>
+                    <button class="btn btn-custom btn-sm ms-2">দান করুন</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-md d-lg-block d-none mt-2" style="background-color: var(--navbar-dark);">
+            <div class="container">
+                <div class="collapse navbar-collapse justify-content-center">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link active text-white" href="#">হোম</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">আমাদের সম্পর্কে</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">আমাদের কার্যক্রম</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">চলমান প্রকল্প</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">আজীবন ও দাতা সদস্য</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">গ্যালারী</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">ভিডিও</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">স্বেচ্ছাসেবক নিবন্ধন</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">সংবাদ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">যোগাযোগ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-4 border-end position-relative">
+                <div class="sidebar position-relative">
+                    <div class="position-relative">
+                        <div class="menu-item active" data-target="content1">পরিচিতি</div>
+                        <div class="menu-item" data-target="content2">নীতি ও আদর্শ</div>
+                        <div class="menu-item" data-target="content3">লক্ষ্য ও উদ্দেশ্য</div>
+                        <div class="menu-item" data-target="content4">কার্যক্রম</div>
+                        <div class="menu-item" data-target="content5">তহবিল ও আয়ের উৎস</div>
+                        <div class="menu-item" data-target="content6">ব্যয়ের নীতিমালা</div>
+                        <div class="menu-item" data-target="content7">অর্জনসমূহ</div>
+                    </div>
+                    <div class="border-indicator"></div>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="content-container p-3 border rounded bg-white">
+                    <div id="content1" class="content show"><h4 class="text-success">পরিচিতি</h4><p>এখানে পরিচিতি সম্পর্কিত তথ্য থাকবে।</p></div>
+                    <div id="content2" class="content"><h4 class="text-success">নীতি ও আদর্শ</h4><p>এখানে নীতি ও আদর্শ সম্পর্কিত তথ্য থাকবে।</p></div>
+                    <div id="content3" class="content"><h4 class="text-success">লক্ষ্য ও উদ্দেশ্য</h4><p>এখানে লক্ষ্য ও উদ্দেশ্য সম্পর্কিত তথ্য থাকবে।</p></div>
+                    <div id="content4" class="content"><h4 class="text-success">কার্যক্রম</h4><p>এখানে কার্যক্রম সম্পর্কিত তথ্য থাকবে।</p></div>
+                    <div id="content5" class="content"><h4 class="text-success">তহবিল ও আয়ের উৎস</h4><p>এখানে তহবিল ও আয়ের উৎস সম্পর্কিত তথ্য থাকবে।</p></div>
+                    <div id="content6" class="content"><h4 class="text-success">ব্যয়ের নীতিমালা</h4><p>এখানে ব্যয়ের নীতিমালা সম্পর্কিত তথ্য থাকবে।</p></div>
+                    <div id="content7" class="content"><h4 class="text-success">অর্জনসমূহ</h4><p>এখানে অর্জনসমূহ সম্পর্কিত তথ্য থাকবে।</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ 
+    <footer class="footer text-center border-top">
+        <div class="mt-5">
+            <p class="mb-1">বন্ধু © 2025 <a class="text-decoration-none" href="#" style="color: var(--primary-color);">আস-সুন্নাহ ফাউন্ডেশন</a> - সর্ব স্বত্ব সংরক্ষিত। কারিগরি সহায়তায় 
+                <a href="#" style="color: var(--primary-color);" class="text-decoration-none">কোয়ান্টিক ডায়নামিক্স</a>।</p>
+                <p class="mb-0">
+                    <a href="#" class="text-decoration-none" style="color: var(--primary-color);">পরিবেশের শর্তাবলী</a> | <a class="text-decoration-none" href="#" style="color: var(--primary-color);">গোপনীয়তা নীতি</a>
+                </p>
+        </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>    
+<script src="assets\js\script.js"></script>
+</body>
+</html>
