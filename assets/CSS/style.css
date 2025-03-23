@@ -69,7 +69,17 @@
     height: calc(100% + 10px);
     background: #e8e8e8;
 }
-
+@media (max-width: 425px) {
+.timeline-item::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 32px;
+    width: 2px;
+    height: calc(100% + 5px);
+    background: #e8e8e8;
+}
+}
 .timeline-item:last-child::after {
     display: none;
 }
