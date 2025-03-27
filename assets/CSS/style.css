@@ -54,36 +54,24 @@
 .timeline-item {
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     min-height: 40px; 
+    flex-wrap: nowrap;
 }
-
-
 
 .timeline-item::after {
     content: "";
     position: absolute;
     left: 5px;
-    top: 15px;
+    top: 12px;
+    bottom: 0; 
     width: 2px;
-    height: calc(100% + 10px);
     background: #e8e8e8;
 }
-@media (max-width: 425px) {
-.timeline-item::after {
-    content: "";
-    position: absolute;
-    left: 5px;
-    top: 32px;
-    width: 2px;
-    height: calc(100% + 5px);
-    background: #e8e8e8;
-}
-}
+
 .timeline-item:last-child::after {
     display: none;
 }
-
 
 .timeline-icon {
     position: relative; 
@@ -94,7 +82,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0; /* Prevent shrinking */
+    flex-shrink: 0; 
 }
 
 /* Image gallery */
@@ -123,6 +111,7 @@
     padding: 10px;
     cursor: pointer;
     font-weight: 500;
+    font-size: 14px;
     transition: background 0.3s ease-in-out;
     position: relative;
 }
@@ -173,3 +162,62 @@
 
 
   
+    ::placeholder {
+        color: #C5C6D6 !important;
+    }
+    
+    select.form-select {
+        color: #C5C6D6 !important;
+    }
+    
+    select.form-select option {
+        color: #000 !important; /* Ensures selected options are visible */
+    }
+    
+    select.form-select:focus,
+    input.form-control:focus {
+        color: #000 !important; /* Changes text color when interacting */
+    }
+    
+
+
+    /* নিয়মিত অনুদান */
+
+    .hidden { display: none; }
+    .payment-option {
+        cursor: pointer;
+        border: 2px solid #ddd;
+        padding: 10px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .payment-option img { width: 80px; }
+    .payment-option.active {
+        border-color: rgb(0, 142, 72);
+        background-color: #d4edda;
+    }
+
+    .toggle-container {
+        display: flex;
+        justify-content: center;
+        border: 1px solid rgb(0, 142, 72);
+        border-radius: 12px;
+        overflow: hidden;
+    }
+    .togglebtn {
+        background-color: white;
+        color: black;
+        border: none;
+        flex: 1;
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .togglebtn.active {
+        background-color: rgb(228, 255, 242);
+        color: rgb(0, 142, 72);
+        border: 1px solid rgb(0, 142, 72);
+        border-radius: 12px ;
+    }

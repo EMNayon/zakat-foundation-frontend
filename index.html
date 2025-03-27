@@ -53,14 +53,14 @@
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link active text-white" href="index.html">হোম</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="About.html">আমাদের সম্পর্কে</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">আমাদের কার্যক্রম</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">চলমান প্রকল্প</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">আজীবন ও দাতা সদস্য</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">গ্যালারী</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">ভিডিও</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">স্বেচ্ছাসেবক নিবন্ধন</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">সংবাদ</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">যোগাযোগ</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="ourwork.html">আমাদের কার্যক্রম</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="currentproject.html">চলমান প্রকল্প</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="lifetime.html">আজীবন ও দাতা সদস্য</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="Gallery.html">গ্যালারী</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="video.html">ভিডিও</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="VolunteerRegistration.html">স্বেচ্ছাসেবক নিবন্ধন</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="News.html">সংবাদ</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="communication.html">যোগাযোগ</a></li>
                 </ul>
             </div>
         </div>
@@ -126,7 +126,7 @@
     </div>
 </div>
 
-
+<!-- আমাদের সম্পর্কে -->
 <div class="about mt-5">
     <div class="container">
         <div class="row">
@@ -166,6 +166,7 @@
 
 </div>
 
+<!-- চলুন একসাথে একটি পরিবর্তন আনি -->
 <div style="background-color: var(--background-color);">
     <div class="container p-1">
         <h5 class="text-center mt-4 mb-5">চলুন একসাথে একটি পরিবর্তন আনি</h5>
@@ -257,7 +258,7 @@
 
 </div>
 
-
+<!-- চলমান প্রজেক্ট -->
 <div class="RunningProject mt-5">
     <h5 class="text-center mt-4 mb-5">চলমান প্রজেক্ট</h5>
     <div class="container">
@@ -328,7 +329,7 @@
 </div>
     
 
-
+<!-- সাম্প্রতিক সংবাদ -->
 <div style="background-color: var(--background-color);">
     <div class="container p-1">
         <h5 class="text-center mt-4 mb-5">সাম্প্রতিক সংবাদ</h5>
@@ -363,7 +364,7 @@
     </div>
 </div>
 
-
+<!-- আমাদের কার্যক্রম -->
 <div class="ourwork">
     <div class="container">
         <h5 class="text-center mt-4 mb-5">আমাদের কার্যক্রম</h5>
@@ -401,7 +402,7 @@
     </div>
 </div>
 
-
+<!-- প্রতিবেদন -->
 <div style="background-color: var(--background-color);">
     <div class="container p-1">
         <h5 class="text-center mt-4 ">প্রতিবেদন</h5>
@@ -437,18 +438,18 @@
     </div>
 </div>
 
-
-
-
-
-
 <!-- Gallery -->
 <div class="container mt-3">
     <h5 class="text-center mb-4">গ্যালারী</h5>
     <div class="row g-4">
+        <!-- Image Card 1 -->
         <div class="col-lg-3 col-md-6">
-            <div class="position-relative overflow-hidden rounded" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal">
-                <img src="assets\images\Gallery.png" alt="Preview Image" class="w-100">
+            <div class="position-relative overflow-hidden rounded preview-card" 
+                style="cursor: pointer;" 
+                data-bs-toggle="modal" 
+                data-bs-target="#imageModal"
+                data-src="assets/images/Gallery.png">
+                <img src="assets/images/Gallery.png" alt="Preview Image" class="w-100">
                 <div class="hover-overlay">
                     <i class="fa-solid fa-eye fs-3 mb-2"></i>
                     <span>Preview</span>
@@ -456,9 +457,14 @@
             </div>
         </div>
 
+        <!-- Image Card 2 -->
         <div class="col-lg-3 col-md-6">
-            <div class="position-relative overflow-hidden rounded" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal">
-                <img src="assets\images\currentnews.png" alt="Preview Image" class="w-100">
+            <div class="position-relative overflow-hidden rounded preview-card" 
+                style="cursor: pointer;" 
+                data-bs-toggle="modal" 
+                data-bs-target="#imageModal"
+                data-src="assets/images/currentnews.png">
+                <img src="assets/images/currentnews.png" alt="Preview Image" class="w-100">
                 <div class="hover-overlay">
                     <i class="fa-solid fa-eye fs-3 mb-2"></i>
                     <span>Preview</span>
@@ -466,28 +472,14 @@
             </div>
         </div>
 
+        <!-- Image Card 3 -->
         <div class="col-lg-3 col-md-6">
-            <div class="position-relative overflow-hidden rounded" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal">
-                <img src="assets\images\Gallery.png" alt="Preview Image" class="w-100">
-                <div class="hover-overlay">
-                    <i class="fa-solid fa-eye fs-3 mb-2"></i>
-                    <span>Preview</span>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-            <div class="position-relative overflow-hidden rounded" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal">
-                <img src="assets\images\currentnews.png" alt="Preview Image" class="w-100">
-                <div class="hover-overlay">
-                    <i class="fa-solid fa-eye fs-3 mb-2"></i>
-                    <span>Preview</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-            <div class="position-relative overflow-hidden rounded" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal">
-                <img src="assets\images\Gallery.png" alt="Preview Image" class="w-100">
+            <div class="position-relative overflow-hidden rounded preview-card" 
+                style="cursor: pointer;" 
+                data-bs-toggle="modal" 
+                data-bs-target="#imageModal"
+                data-src="assets/images/Gallery.png">
+                <img src="assets/images/Gallery.png" alt="Preview Image" class="w-100">
                 <div class="hover-overlay">
                     <i class="fa-solid fa-eye fs-3 mb-2"></i>
                     <span>Preview</span>
@@ -495,9 +487,28 @@
             </div>
         </div>
 
+        <!-- Image Card 4 -->
         <div class="col-lg-3 col-md-6">
-            <div class="position-relative overflow-hidden rounded" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal">
-                <img src="assets\images\currentnews.png" alt="Preview Image" class="w-100">
+            <div class="position-relative overflow-hidden rounded preview-card" 
+                style="cursor: pointer;" 
+                data-bs-toggle="modal" 
+                data-bs-target="#imageModal"
+                data-src="assets/images/currentnews.png">
+                <img src="assets/images/currentnews.png" alt="Preview Image" class="w-100">
+                <div class="hover-overlay">
+                    <i class="fa-solid fa-eye fs-3 mb-2"></i>
+                    <span>Preview</span>
+                </div>
+            </div>
+        </div>
+        <!-- Image Card 1 -->
+        <div class="col-lg-3 col-md-6">
+            <div class="position-relative overflow-hidden rounded preview-card" 
+                style="cursor: pointer;" 
+                data-bs-toggle="modal" 
+                data-bs-target="#imageModal"
+                data-src="assets/images/Gallery.png">
+                <img src="assets/images/Gallery.png" alt="Preview Image" class="w-100">
                 <div class="hover-overlay">
                     <i class="fa-solid fa-eye fs-3 mb-2"></i>
                     <span>Preview</span>
@@ -505,10 +516,14 @@
             </div>
         </div>
 
-
+        <!-- Image Card 2 -->
         <div class="col-lg-3 col-md-6">
-            <div class="position-relative overflow-hidden rounded" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal">
-                <img src="assets\images\Gallery.png" alt="Preview Image" class="w-100">
+            <div class="position-relative overflow-hidden rounded preview-card" 
+                style="cursor: pointer;" 
+                data-bs-toggle="modal" 
+                data-bs-target="#imageModal"
+                data-src="assets/images/currentnews.png">
+                <img src="assets/images/currentnews.png" alt="Preview Image" class="w-100">
                 <div class="hover-overlay">
                     <i class="fa-solid fa-eye fs-3 mb-2"></i>
                     <span>Preview</span>
@@ -516,27 +531,45 @@
             </div>
         </div>
 
-
+        <!-- Image Card 3 -->
         <div class="col-lg-3 col-md-6">
-            <div class="position-relative overflow-hidden rounded" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#imageModal">
-                <img src="assets\images\Gallery.png" alt="Preview Image" class="w-100">
+            <div class="position-relative overflow-hidden rounded preview-card" 
+                style="cursor: pointer;" 
+                data-bs-toggle="modal" 
+                data-bs-target="#imageModal"
+                data-src="assets/images/Gallery.png">
+                <img src="assets/images/Gallery.png" alt="Preview Image" class="w-100">
                 <div class="hover-overlay">
                     <i class="fa-solid fa-eye fs-3 mb-2"></i>
                     <span>Preview</span>
                 </div>
             </div>
         </div>
-            <!-- More Button -->
-            <div class="text-center mt-3">
-                <button class="btn text-white w-25 d-block mx-auto mb-4 mt-3" 
-                    style="background-color: var(--primary-color);">আরও</button>
+
+        <!-- Image Card 4 -->
+        <div class="col-lg-3 col-md-6">
+            <div class="position-relative overflow-hidden rounded preview-card" 
+                style="cursor: pointer;" 
+                data-bs-toggle="modal" 
+                data-bs-target="#imageModal"
+                data-src="assets/images/currentnews.png">
+                <img src="assets/images/currentnews.png" alt="Preview Image" class="w-100">
+                <div class="hover-overlay">
+                    <i class="fa-solid fa-eye fs-3 mb-2"></i>
+                    <span>Preview</span>
+                </div>
             </div>
+        </div>
+
+        <!-- More Button -->
+        <div class="text-center mt-3">
+            <button class="btn text-white w-25 d-block mx-auto mb-4 mt-3" 
+                style="background-color: var(--primary-color);">আরও</button>
+        </div>
     </div>
 </div>
 
-
-
-
+<!-- Footer -->
 <footer class="footer text-center py-3 border-top">
     <p class="mb-1">বন্ধু © 2025 <a class="text-decoration-none" href="#" style="color: var(--primary-color);">আস-সুন্নাহ ফাউন্ডেশন</a> - সর্ব স্বত্ব সংরক্ষিত। কারিগরি সহায়তায় 
     <a href="#" style="color: var(--primary-color);" class="text-decoration-none">কোয়ান্টিক ডায়নামিক্স</a>।</p>
@@ -547,7 +580,7 @@
 
 
 
-    <!-- Header Offcanvas Sidebar for Small Screens -->
+<!-- Header Offcanvas Sidebar for Small Screens -->
     <div class="offcanvas offcanvas-start w-md-100 w-75" tabindex="-1" id="offcanvasExample">
         <div class="offcanvas-header shadow w-100 d-flex justify-content-center">
             <img src="assets/images/logo.png" class="offcanvas-title" alt="">
@@ -568,9 +601,9 @@
         </div>
     </div>
 
-    <!-- Gallery Modal -->
+<!-- Gallery Modal -->
 <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
-    <nav class="navbar navbar-dark bg-dark p-2">
+    <nav class="navbar navbar-dark p-2" style="z-index: 1000000; background-color: rgba(0, 0, 0, 0.253);">
         <div class="container-fluid d-flex justify-content-end">
             <button class="btn btn-sm text-white" onclick="rotateImage(-90)"><i class="fa-solid fa-rotate-left"></i></button>
             <button class="btn btn-sm text-white" onclick="rotateImage(90)"><i class="fa-solid fa-rotate-right"></i></button>
@@ -581,7 +614,7 @@
             </button>
         </div>
     </nav>
-    <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-dialog modal-dialog-centered modal-lg" style="z-index: -1;">
         <div class="modal-content bg-transparent border-0">
             <div class="modal-body text-center p-0">
                 <img id="previewImage" src="assets/images/currentnews.png" class="img-fluid" alt="Full Preview">
@@ -592,6 +625,6 @@
 
     
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-     <script src="assets/js/main.js"></script>
+     <script src="assets\js\script.js"></script>
 </body>
 </html>
