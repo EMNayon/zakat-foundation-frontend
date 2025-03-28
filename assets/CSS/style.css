@@ -1,6 +1,13 @@
+@font-face {
+    font-family: "SolaimanLipi";
+    src: url("../../fonts/SolaimanLipi.ttf") format("truetype");}
+
 *{
     margin: 0;
     padding: 0;
+    
+}
+body{
     box-sizing: border-box;
     font-family: "Ubuntu","SolaimanLipi",sans-serif;
     font-size: 16px;
@@ -8,6 +15,7 @@
     font-feature-settings: "tnum","tnum";
     font-variant: tabular-nums;
 }
+
 
 /* Global Color */
 :root {
@@ -17,6 +25,7 @@
     --link-color:#008e48;
     --navbar-dark:#033b1e;
     --navbar-item-text:white;
+    --description-text:#545454;
     --ourwork-bg1: linear-gradient(45deg, rgb(51, 153, 102), rgb(0, 153, 153));
     --ourwork-bg2: linear-gradient(45deg, rgb(0, 153, 204), rgb(0, 153, 153));
 }
@@ -220,4 +229,40 @@
         color: rgb(0, 142, 72);
         border: 1px solid rgb(0, 142, 72);
         border-radius: 12px ;
+    }
+
+    /* সংবাদ + আজীবন ও দাতা সদস্য+চলমান প্রকল্প*/
+    .currentproject p,.lifetime p,.lifetime span,.news p, .news h6{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: normal;
+        color: #545454;
+        text-align: justify;
+    }
+
+    .lifetime label{
+        color: #535353;
+    }
+
+    .news  h1{
+        font-size: 24px;
+    }
+
+    /* ভিডিও */
+    .video{
+        font-size: 14px;;
+    }
+
+    /* আমাদের কার্যক্রম */
+   .about p, .content p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    color: #545454;
+    text-align: justify;
+    }
+
+   .about h4, .content h4{
+        color: #008e48;
+        font-size: 23px;
     }
