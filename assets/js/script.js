@@ -20,21 +20,28 @@ function updateTransform() {
 }
 
 
-//about
+//global virtical navbar border indicator
 document.addEventListener("DOMContentLoaded", function () {
     let items = document.querySelectorAll(".menu-item");
     let contents = document.querySelectorAll(".content");
     let borderIndicator = document.querySelector(".border-indicator");
 
-    let firstItem = document.querySelector(".menu-item.active");
-    borderIndicator.style.top = firstItem.offsetTop + "px";
+    // Check if borderIndicator exists before accessing its style
+    if (borderIndicator) {
+        let firstItem = document.querySelector(".menu-item.active");
+        if (firstItem) {
+            borderIndicator.style.top = firstItem.offsetTop + "px";
+        }
+    }
 
     items.forEach(item => {
         item.addEventListener("click", function () {
             items.forEach(i => i.classList.remove("active"));
             this.classList.add("active");
 
-            borderIndicator.style.top = this.offsetTop + "px";
+            if (borderIndicator) {
+                borderIndicator.style.top = this.offsetTop + "px";
+            }
 
             contents.forEach(c => c.classList.remove("show"));
             document.getElementById(this.dataset.target).classList.add("show");
@@ -43,7 +50,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// payment 
+
+//Donation payment 
 function toggleForm(type) {
     document.getElementById("daily-form").classList.toggle("hidden", type !== 'daily');
     document.getElementById("monthly-form").classList.toggle("hidden", type !== 'monthly');

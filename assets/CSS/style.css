@@ -49,12 +49,13 @@ body{
     border: none;
     padding: 8px 15px;
     border-radius: 5px;
+    font-size: 20px;
 }
 .btn-custom:hover {
     background-color: var(--primary-color);
 }
 
-/* Time line design */
+/* global Time line design */
 .timeline {
     position: relative;
     padding-left: 25px;
@@ -101,7 +102,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.295);
     color: white;
     display: flex;
     flex-direction: column;
@@ -142,56 +143,25 @@ body{
 .content { display: none; }
 .content.show { display: block; }
 
-@media (max-width: 425px) {
-    .menu-item {
-        padding: 10px;
-        cursor: pointer;
-        font-weight: 500;
-        transition: background 0.3s ease-in-out;
-        white-space: nowrap;
-        min-width: max-content;
-        position: relative;
-    }
-  
+/* input field */
+::placeholder {
+    color: #C5C6D6 !important;
 }
 
+select.form-select {
+    color: #C5C6D6 !important;
+}
 
- /* Responsive Design */
- @media (min-width: 320px) and (max-width: 425px) {
-        .logo img {
-            width:50px;
-        }
-        .btn-custom {
-            font-size: 12px;
-            padding: 4px 10px;
-        }
-    }
+select.form-select option {
+    color: #000 !important;
+}
 
-
-
-
-  
-    ::placeholder {
-        color: #C5C6D6 !important;
-    }
-    
-    select.form-select {
-        color: #C5C6D6 !important;
-    }
-    
-    select.form-select option {
-        color: #000 !important; /* Ensures selected options are visible */
-    }
-    
-    select.form-select:focus,
-    input.form-control:focus {
-        color: #000 !important; /* Changes text color when interacting */
-    }
-    
-
+select.form-select:focus,
+input.form-control:focus {
+    color: #000 !important;
+}
 
     /* নিয়মিত অনুদান */
-
     .hidden { display: none; }
     .payment-option {
         cursor: pointer;
@@ -266,3 +236,56 @@ body{
         color: #008e48;
         font-size: 23px;
     }
+
+    /* news details Text Styles */
+.news-title {
+    font-size: clamp(24px, 4vw, 40px);
+    color:#545454;
+}
+
+.news-date {
+    font-size: 14px;
+    color:#545454;
+}
+
+.news-text {
+    font-size: 16px;
+    color:#545454;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+
+ /* Responsive Design */
+ @media (min-width: 320px) and (max-width: 425px) {
+        .logo img {
+            width:50px;
+        }
+        .btn-custom {
+            font-size: 12px;
+            padding: 4px 10px;
+        }
+    }
+
+
+    @media (max-width: 425px) {
+        .menu-item {
+            padding: 10px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: background 0.3s ease-in-out;
+            white-space: nowrap;
+            min-width: max-content;
+            position: relative;
+        }
+      
+    }
+
+
+
+    
+
+
+
