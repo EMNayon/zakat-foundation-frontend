@@ -288,11 +288,10 @@ input.form-control:focus {
     
 
 
-
-
-
-
-
+  /* Remove overflow issues on parent elements */
+  body, .container {
+    overflow-x: hidden; 
+}
 
 
 

@@ -111,3 +111,24 @@ function selectPayment(id) {
     document.querySelector(`[onclick="selectPayment('${id}')"]`).classList.add("active");
     document.getElementById(id).checked = true;
 }
+
+
+  // Get the navbar element
+  const navbar = document.getElementById('navbar');
+
+  // Function to handle the scroll event
+  window.onscroll = function() {
+      if (window.pageYOffset > navbar.offsetTop) {
+          navbar.style.position = 'fixed';
+          navbar.style.backgroundColor = 'white'; 
+          navbar.style.top = '0';
+          navbar.style.left = '0';
+          navbar.style.right = '0';
+          navbar.style.zIndex = '1050'; 
+      } else {
+          navbar.style.position = 'relative';
+          navbar.style.top = 'auto';
+          navbar.style.left = 'auto';
+          navbar.style.right = 'auto';
+      }
+  };
