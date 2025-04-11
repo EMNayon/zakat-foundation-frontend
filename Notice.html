@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>As-Sunnah Foundation</title>
+    
+    <!-- External Styles and Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+
+   <!-- Header Section -->
+   <header class="mt-2 ">
+    <div class="container bg-white ">
+        <div class="d-lg-flex justify-content-between align-items-center flex-wrap">
+            
+          
+    
+            <!-- Center: Account and Donate Buttons -->
+            <div class="d-flex align-items-center  d-lg-block d-none" >
+                <button class="btn btn-sm btn-outline-success   me-2">আমার একাউন্ট</button>
+                <button class="btn btn-sm btn-success text-white" >দান করুন</button>
+            </div>
+    
+            <!-- Right: Social Icons + Language Toggle -->
+            <div class="d-flex align-items-center justify-content-center ">
+                <!-- Social Icons -->
+                <div class="d-flex me-3 ">
+                    <a class="text-dark me-3" href="#"><i class="fa-brands fa-facebook fs-5 text-primary"></i></a>
+                    <a class="text-dark me-3" href="#"><i class="fa-brands fa-youtube fs-5 text-danger"></i></a>
+                    <a class="text-dark me-3" href="#"><i class="fa-solid fa-envelope fs-5 text-warning"></i></a>
+                    <a class="text-dark" href="#"><i class="fa-solid fa-phone fs-5 text-info"></i></a>
+                </div>
+                
+                <!-- Language Toggle -->
+                <div class="btn-group border rounded ms-auto  ">
+                    <button class="btn btn-sm btn-outline-secondary px-3" style="font-size: clamp(0.75rem, 1vw, 1rem);">EN</button>
+                    <button class="btn btn-sm btn-success text-white px-3" style="font-size: clamp(0.75rem, 1vw, 1rem);">বাংলা</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg  mt-2 shadow-sm border-top border-bottom" style="background-color: white; ">
+        <div class="container px-2">
+              <!-- Left: Logo -->
+              <div class="logo ">
+                <img src="assets/images/logo.png" alt="As-Sunnah Foundation" class="img-fluid" style="max-height:60px;">
+            </div>
+            <div class="d-flex align-items-center  d-block d-lg-none" >
+                <button class="btn btn-sm btn-outline-success   me-2 " style="font-size: 12px;">আমার একাউন্ট</button>
+                <button class="btn btn-sm btn-success text-white" style="font-size: 12px;">দান করুন</button>
+            </div>
+                <a class="btn btn-light d-block d-lg-none" data-bs-toggle="offcanvas" href="#offcanvasExample">
+                    <i class="fa-solid fa-bars fs-4 text-dark"></i>
+                </a>
+          
+            <div class="collapse navbar-collapse justify-content-center d-lg-block  d-none">
+                <ul class="navbar-nav d-flex gap-lg-3">
+                    <li class="nav-item"><a class="nav-link active text-success" href="index.html">হোম</a></li>
+                    <li class="nav-item"><a class="nav-link text-success" href="About.html">আমাদের সম্পর্কে</a></li>
+                    <li class="nav-item"><a class="nav-link text-success" href="ourwork.html">আমাদের কার্যক্রম</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-success" href="currentproject.html">চলমান প্রকল্প</a>
+                    </li>
+                    <!-- <li class="nav-item"><a class="nav-link text-success" href="lifetime.html">আজীবন ও দাতা সদস্য</a>
+                    </li> -->
+
+                    <li class="nav-item"><a class="nav-link text-success" href="Gallery.html">গ্যালারী</a></li>
+                    <li class="nav-item"><a class="nav-link text-success" href="video.html">ভিডিও</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link text-success"
+                            href="VolunteerRegistration.html">স্বেচ্ছাসেবক নিবন্ধন</a></li> -->
+                    <li class="nav-item"><a class="nav-link text-success" href="News.html">সংবাদ</a></li>
+                    <li class="nav-item"><a class="nav-link text-success" href="Notice.html">নোটিশ </a></li>
+                    <li class="nav-item"><a class="nav-link text-success" href="Report.html">রিপোর্ট </a></li>
+                    <li class="nav-item"><a class="nav-link text-success" href="communication.html">যোগাযোগ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+        <div style="background-color: rgb(0, 142, 72);
+ color: white; " class="text-center  p-md-2 p-1"><h3>নোটিশ</h3></div>
+    </header>
+
+   
+<!-- Notice Section -->
+<div class="notice" style="background-color: var(--background-color);">
+    <div class="container p-1 pb-5">
+        <div class="row mt-4 p-2">
+            <div class="col-lg-2 col-md-3 border-end position-relative">
+                <div class="sidebar position-relative d-lg-block d-none">
+                    <div class="position-relative d-flex flex-md-column flex-row flex-nowrap overflow-auto">
+                        <div class="menu-item active" data-target="content1">বাৎসরিক</div>
+                        <div class="menu-item" data-target="content2">মাসিক</div>
+                        <div class="menu-item" data-target="content3">সাপ্তাহিক</div>
+                        <div class="menu-item" data-target="content4">দৈনিক</div>
+                    </div>
+                    <div class="border-indicator d-md-block d-none"></div>
+                </div>
+
+                <!-- Dropdown for smaller screens -->
+                <div class="sidebar position-relative d-block d-lg-none">
+                    <select class=" form-select d-block d-lg-none mb-3 shadow-none" aria-label="Default select example">
+                        <option data-target="content1">বাৎসরিক</option>
+                        <option data-target="content2">মাসিক</option>
+                        <option data-target="content3">সাপ্তাহিক</option>
+                        <option data-target="content4">দৈনিক</option>
+                    </select>
+    
+                </div>
+            </div>
+
+            <div class="col-lg-10 col-md-9 about">
+                <div class="content-container p-3 rounded bg-white shadow">
+                    <div id="content1" class="content show"><h4>বাৎসরিক :</h4>
+                        <table class="table table-bordered ">
+                            <thead style="text-align: center; vertical-align: middle;">
+                              <tr >
+                                <th>ক্র.স.</th>
+                                <th>বিজ্ঞপ্তির বিষয়</th>
+                                <th>তারিখ</th>
+                                <th></th>
+                              </tr>
+                            </thead>
+                            <tbody style="text-align: center; vertical-align: middle;">
+                              <tr>
+                                <td>1</td>
+                                <td>অনারী খর্ন আদার/সমগ্রের এক্সিট সঙ্ক্রান্ত নীতিমালা</td>
+                                <td>March 17, 2025</td>
+                                <td><a href="#" class="btn btn-success btn-sm">দেখুন </a></td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td>জনপ্রশাসন মন্ত্রনালয়</td>
+                                <td>August 21, 2024</td>
+                                <td><a href="#" class="btn  btn-sm"><i class="fa-regular fa-file-pdf" style="font-size: 30px; color: red;"></i></a></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    
+                    </div>
+                    <div id="content2" class="content"><h4 class="text-success">মাসিক :</h4>
+                        <table class="table table-bordered ">
+                            <thead style="text-align: center; vertical-align: middle;">
+                              <tr >
+                                <th>ক্র.স.</th>
+                                <th>বিজ্ঞপ্তির বিষয়</th>
+                                <th>তারিখ</th>
+                                <th></th>
+                              </tr>
+                            </thead>
+                            <tbody style="text-align: center; vertical-align: middle;">
+                              <tr>
+                                <td>1</td>
+                                <td>অনারী খর্ন আদার/সমগ্রের এক্সিট সঙ্ক্রান্ত নীতিমালা</td>
+                                <td>March 17, 2025</td>
+                                <td><a href="#" class="btn btn-success btn-sm">দেখুন </a></td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td>জনপ্রশাসন মন্ত্রনালয়</td>
+                                <td>August 21, 2024</td>
+                                <td><a href="#" class="btn  btn-sm"><i class="fa-regular fa-file-pdf" style="font-size: 30px; color: red;"></i></a></td>
+                              </tr>
+                              <tr>
+                                <td>1</td>
+                                <td>অনারী খর্ন আদার/সমগ্রের এক্সিট সঙ্ক্রান্ত নীতিমালা</td>
+                                <td>March 17, 2025</td>
+                                <td><a href="#" class="btn btn-success btn-sm">দেখুন </a></td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td>জনপ্রশাসন মন্ত্রনালয়</td>
+                                <td>August 21, 2024</td>
+                                <td><a href="#" class="btn btn-success btn-sm">দেখুন </a></td>
+                              </tr>
+                              <tr>
+                                <td>1</td>
+                                <td>অনারী খর্ন আদার/সমগ্রের এক্সিট সঙ্ক্রান্ত নীতিমালা</td>
+                                <td>March 17, 2025</td>
+                                <td><a href="#" class="btn  btn-sm"><i class="fa-regular fa-file-pdf" style="font-size: 30px; color: red;"></i></a></td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td>জনপ্রশাসন মন্ত্রনালয়</td>
+                                <td>August 21, 2024</td>
+                                <td><a href="#" class="btn btn-success btn-sm">দেখুন </a></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                       </div>
+                    <div id="content3" class="content"><h4>সাপ্তাহিক</h4>
+                        <table class="table table-bordered ">
+                            <thead style="text-align: center; vertical-align: middle;">
+                              <tr >
+                                <th>ক্র.স.</th>
+                                <th>বিজ্ঞপ্তির বিষয়</th>
+                                <th>তারিখ</th>
+                                <th></th>
+                              </tr>
+                            </thead>
+                            <tbody style="text-align: center; vertical-align: middle;">
+                              <tr>
+                                <td>1</td>
+                                <td>অনারী খর্ন আদার/সমগ্রের এক্সিট সঙ্ক্রান্ত নীতিমালা</td>
+                                <td>March 17, 2025</td>
+                                <td><a href="#" class="btn btn-success btn-sm">দেখুন </a></td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td>জনপ্রশাসন মন্ত্রনালয়</td>
+                                <td>August 21, 2024</td>
+                                <td><a href="#" class="btn  btn-sm"><i class="fa-regular fa-file-pdf" style="font-size: 30px; color: red;"></i></a></td>
+                              </tr>
+                              <tr>
+                                <td>1</td>
+                                <td>অনারী খর্ন আদার/সমগ্রের এক্সিট সঙ্ক্রান্ত নীতিমালা</td>
+                                <td>March 17, 2025</td>
+                                <td><a href="#" class="btn  btn-sm"><i class="fa-regular fa-file-pdf" style="font-size: 30px; color: red;"></i></a></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                    <div id="content4" class="content"><h4>দৈনিক</h4>
+                        <table class="table table-bordered ">
+                            <thead style="text-align: center; vertical-align: middle;">
+                              <tr >
+                                <th>ক্র.স.</th>
+                                <th>বিজ্ঞপ্তির বিষয়</th>
+                                <th>তারিখ</th>
+                                <th></th>
+                              </tr>
+                            </thead>
+                            <tbody style="text-align: center; vertical-align: middle;">
+                              <tr>
+                                <td>1</td>
+                                <td>অনারী খর্ন আদার/সমগ্রের এক্সিট সঙ্ক্রান্ত নীতিমালা</td>
+                                <td>March 17, 2025</td>
+                                <td><a href="#" class="btn  btn-sm"><i class="fa-regular fa-file-pdf" style="font-size: 30px; color: red;"></i></a></td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td>জনপ্রশাসন মন্ত্রনালয়</td>
+                                <td>August 21, 2024</td>
+                                <td><a href="#" class="btn btn-success btn-sm">দেখুন </a></td>
+                              </tr>
+
+                              <tr>
+                                <td>1</td>
+                                <td>অনারী খর্ন আদার/সমগ্রের এক্সিট সঙ্ক্রান্ত নীতিমালা</td>
+                                <td>March 17, 2025</td>
+                                <td><a href="#" class="btn btn-success btn-sm">দেখুন </a></td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td>জনপ্রশাসন মন্ত্রনালয়</td>
+                                <td>August 21, 2024</td>
+                                <td><a href="#" class="btn  btn-sm"><i class="fa-regular fa-file-pdf" style="font-size: 30px; color: red;"></i></a></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer  py-4 mt-5  text-dark  border-top  shadow" style="background-color: rgba(250, 250, 250, 0.938);">
+    <div class="container">
+        <!-- Row with 3 columns -->
+        <div class="row">
+            <!-- Column 1: Logo -->
+            <div class="col-lg-6 mb-3 text-center">
+                <img src="assets\images\logo.png" alt="Logo" class="img-fluid">
+                <p class="mt-3"><a href="#" class="text-decoration-none" style="color: var(--primary-color);">যাকাত ওয়েলফেয়ার ফাউন্ডেশন</a> যা যাকাত উদ্যোগের <br>মাধ্যমে কমিউনিটিকে <a href="#" class="text-decoration-none" style="color: var(--primary-color);">ক্ষমতায়ন</a>  করে।</p>
+            </div>
+
+            <!-- Column 2: Contact Info -->
+            <div class="col-lg-4 col-md-6 text-md-start text-center">
+                <h5  style="color: var(--primary-color);">যোগাযোগ :</h5>
+                <ul class="list-unstyled">
+                    <li><i class="bi bi-geo-alt-fill"></i> ১২৩ যাকাত স্ট্রিট, ঢাকা, বাংলাদেশ</li>
+                    <li><i class="bi bi-phone-fill"></i> +৮৮০ ১২৩ ৪৫৬ ৭৮৯</li>
+                    <li><i class="bi bi-envelope-fill"></i> info@zakatfoundation.com</li>
+                </ul>
+                <h6 style="color: var(--primary-color);">অনুসরণ করুন :</h6>
+                <!-- Social Media Icons -->
+                <div class="d-flex gap-3 mt-2 mb-md-0 mb-4  justify-content-md-start justify-content-center">
+                    <a href="#"><i style="font-size: 16px;" class="fa-brands fa-facebook  text-primary"></i></a>
+                    <a href="#"><i style="font-size: 16px;" class="fa-brands fa-youtube text-danger"></i></a>
+                    <a href="#"><i style="font-size: 16px;" class="fa-solid fa-envelope  text-warning"></i></a>
+                    <a href="#"><i style="font-size: 16px;" class="fa-solid fa-phone  text-info"></i></a>
+                </div>
+            </div>
+
+            <!-- Column 3: Zakat Program -->
+            <div class="col-lg-2 col-md-6 text-md-start text-center">
+                <h5 style="color: var(--primary-color);">আমাদের কার্যক্রম :</h5>
+                <ul class="list-unstyled ">
+                    <li><a href="#" class="text-decoration-none text-dark">অন্ন সহায়তা</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">অধিকার সহায়তা</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">শিক্ষা সহায়তা</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">স্বাস্থ্য সহায়তা</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Horizontal Line -->
+        <hr class="border-secondary">
+
+        <!-- Footer Bottom -->
+        <div class="row text-center">
+            <div class="col-12">
+                <p class="mb-0">&copy; ২০২৫ <a href="#" class="text-decoration-none" style="color: var(--primary-color);">যাকাত ওয়েলফেয়ার ফাউন্ডেশন</a>. সর্বস্বত্ব সংরক্ষিত।</p>
+                <p class="mb-0">
+                    <a href="#" class="text-decoration-none " style="color: var(--primary-color);" >পরিবেশের শর্তাবলী</a> | 
+                    <a href="#" class="text-decoration-none" style="color: var(--primary-color);">গোপনীয়তা নীতি</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Header Offcanvas Sidebar for Small Screens -->
+<div class="offcanvas offcanvas-start w-md-100 w-75" tabindex="-1" id="offcanvasExample">
+    <div class="offcanvas-header shadow w-100 d-flex justify-content-center">
+        <img src="assets/images/logo.png" class="offcanvas-title" alt="">
+    </div>
+    <div class="offcanvas-body">
+        <nav class="nav flex-column">
+            <a class="nav-link" href="#">হোম</a>
+            <a class="nav-link" href="#">আমাদের সম্পর্কে</a>
+            <a class="nav-link" href="#">আমাদের কার্যক্রম</a>
+            <a class="nav-link" href="#">চলমান প্রকল্প</a>
+            <a class="nav-link active" href="#">আজীবন ও দাতা সদস্য</a>
+            <a class="nav-link" href="#">গ্যালারী</a>
+            <a class="nav-link" href="#">ভিডিও</a>
+            <a class="nav-link" href="#">স্বেচ্ছাসেবক নিবন্ধন</a>
+            <a class="nav-link" href="#">সংবাদ</a>
+            <a class="nav-link" href="#">যোগাযোগ</a>
+        </nav>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>    
+<script src="assets\js\script.js"></script>
+</body>
+</html>

@@ -1,30 +1,30 @@
-//Gallery
-// dynamically change preivew image in modal
-document.addEventListener("DOMContentLoaded", function () {
-    const modalImage = document.getElementById("previewImage");
-    const previewCards = document.querySelectorAll("[data-bs-toggle='modal']");
 
-    previewCards.forEach(card => {
-        card.addEventListener("click", function () {
-            const imageSrc = this.querySelector("img").getAttribute("src"); 
-            modalImage.setAttribute("src", imageSrc); 
-        });
-    });
-});
-// perform image rotation and zooming
+// gallery zoom rotate
 let rotation = 0, zoomLevel = 1;
-function rotateImage(degrees) { rotation += degrees; updateTransform(); }
-function zoomImage(amount) { zoomLevel = Math.max(1, zoomLevel + amount); updateTransform(); }
-function updateTransform() {
-    document.getElementById("previewImage").style.transform = `rotate(${rotation}deg) scale(${zoomLevel})`;
+
+function rotateImage(degrees) {
+    rotation += degrees;
+    updateTransform();
 }
 
+function zoomImage(amount) {
+    zoomLevel = Math.max(1, zoomLevel + amount);
+    updateTransform();
+}
+
+function updateTransform() {
+    const carouselItems = document.querySelectorAll('.carousel-item img');
+    carouselItems.forEach(item => {
+        item.style.transform = `rotate(${rotation}deg) scale(${zoomLevel})`;
+    });
+}
 
 //global virtical navbar border indicator
 document.addEventListener("DOMContentLoaded", function () {
     let items = document.querySelectorAll(".menu-item");
     let contents = document.querySelectorAll(".content");
     let borderIndicator = document.querySelector(".border-indicator");
+    let selectDropdown = document.querySelector(".sidebar select"); // Get the select dropdown
 
     // Check if borderIndicator exists before accessing its style
     if (borderIndicator) {
@@ -34,19 +34,46 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+    // Function to update content based on the active item
+    function updateContent(target) {
+        items.forEach(i => i.classList.remove("active"));
+        const selectedItem = Array.from(items).find(item => item.dataset.target === target);
+        if (selectedItem) {
+            selectedItem.classList.add("active");
+            if (borderIndicator) {
+                borderIndicator.style.top = selectedItem.offsetTop + "px";
+            }
+        }
+
+        contents.forEach(c => c.classList.remove("show"));
+        const selectedContent = document.getElementById(target);
+        if (selectedContent) {
+            selectedContent.classList.add("show");
+        }
+    }
+
+    // Click event for menu items
     items.forEach(item => {
         item.addEventListener("click", function () {
-            items.forEach(i => i.classList.remove("active"));
-            this.classList.add("active");
-
-            if (borderIndicator) {
-                borderIndicator.style.top = this.offsetTop + "px";
-            }
-
-            contents.forEach(c => c.classList.remove("show"));
-            document.getElementById(this.dataset.target).classList.add("show");
+            updateContent(this.dataset.target);
         });
     });
+
+    // Change event for select dropdown (for small screens)
+    if (selectDropdown) {
+        // Trigger content change when dropdown value changes
+        selectDropdown.addEventListener("change", function () {
+            const targetContent = this.options[this.selectedIndex].dataset.target;
+            updateContent(targetContent);
+        });
+
+        // Trigger content change on page load to match the default selected option
+        const selectedOption = selectDropdown.querySelector("option:checked");
+        if (selectedOption) {
+            const targetContent = selectedOption.dataset.target;
+            updateContent(targetContent);
+        }
+    }
 });
 
 
