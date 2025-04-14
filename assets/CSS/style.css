@@ -16,6 +16,11 @@ body{
     font-variant: tabular-nums;
 }
 
+  /* Remove overflow issues on parent elements */
+  body, .container {
+    overflow-x: hidden; 
+}
+
 
 /* Global Color */
 :root {
@@ -36,13 +41,18 @@ body{
     color: var(--navbar-item-text);
     padding: 10px 15px;
 }
+
+
 .nav-item a.active {
     border-bottom: 2px solid var(--primary-color);
 }
+
 .nav-item a:hover {
     border-bottom: 2px solid var(--primary-color);
     color: var(--primary-color) !important;
 }
+
+
 .btn-custom {
     background-color: var(--primary-color);
     color: white;
@@ -257,6 +267,10 @@ input.form-control:focus {
     text-align: justify;
 }
 
+.newsread:hover{
+    border-bottom:1px solid green;
+}
+
 
  /* Responsive Design */
  @media (min-width: 320px) and (max-width: 425px) {
@@ -288,10 +302,7 @@ input.form-control:focus {
     
 
 
-  /* Remove overflow issues on parent elements */
-  body, .container {
-    overflow-x: hidden; 
-}
+
 
 
 

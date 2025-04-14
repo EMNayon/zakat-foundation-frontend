@@ -132,3 +132,7 @@ function selectPayment(id) {
           navbar.style.right = 'auto';
       }
   };
+
+
+  
+  

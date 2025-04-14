@@ -14,7 +14,7 @@
 </head>
 <body>
 <!-- Header Section -->
-<header class="mt-2">
+<header class="mt-2" style="z-index: -1;">
     <div class="container bg-white mb-2">
         <div class="d-lg-flex justify-content-between align-items-center flex-wrap">
             <!-- Center: Account and Donate Buttons -->
@@ -78,94 +78,86 @@
 </header>
 
 <!-- body content -->
- <div style="background-color: var(--background-color); " class="news">
-    <div class="container p-1 pb-4  ">
-         <div class="bg-white rounded mt-4 p-4">
-            <div class="news-title">১০৯ এতিমসহ ৩০০ শহীদ পরিবারের পাশে আস-সুন্নাহ ফাউন্ডেশন</div>
-         <p class="news-date">৩০/১০/২০২৪, ১১:৩৩:৩৬ AM</p>
-         <div class="position-relative overflow-hidden rounded preview-card" 
-         style="cursor: pointer;" 
-         data-bs-toggle="modal" 
-         data-bs-target="#imageModal"
-         data-src="assets/images/Gallery.png">
-         <img src="assets/images/Gallery.png" alt="Preview Image" class="w-100">
-         <div class="hover-overlay">
-             <i class="fa-solid fa-eye fs-3 mb-2"></i>
-             <span>Preview</span>
-         </div>
-     </div>
+<div style="background-color: var(--background-color);" class="news">
+    <div class="container p-4 pb-5">
+        <div class="bg-white rounded mt-4 p-5 shadow-sm">
+            <!-- News Title -->
+            <div class="news-title fs-3  text-success mb-3">১০৯ এতিমসহ ৩০০ শহীদ পরিবারের পাশে আস-সুন্নাহ ফাউন্ডেশন</div>
+            <!-- News Date -->
+            <p class="news-date text-muted mb-4">আপডেট ১৪ এপ্রিল ২০২৫, ১৯:৪৪</p>
+            
+            <!-- Carousel -->
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/images/Gallery.png" class="d-block w-100 rounded" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/currentnews.png" class="d-block w-100 rounded" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/iftar_gallery_1.jpg" class="d-block w-100 rounded" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
 
-     <p class="news-text">বৈষম্য বিরোধী ছাত্র আন্দোলেন শহীদ হওয়া ৩০০ পরিবারকে
-         ১ লক্ষ করে টাকা সহায়তা করল আস-সুন্নাহ ফাউন্ডেশন। এর মধ্যে ১০৯ জন এতিমও রয়েছেন।</p>
-     <p class="news-text">২৯ অক্টোবর রাজধানীর নিউ ইস্কাটনের বিয়াম মিলনায়তনে এক অনাড়ম্বরপূর্ণ অনুষ্ঠানে ৩০০ শহীদ পরিবারকে 
-        ১ লক্ষ টাকার চেক প্রদান করা হয়েছে। এর মধ্যে এতিম পরিবার ছিল ১০৯ টি, সাধারণ পরিবার ১৮৯ টি এবং 
-        হিন্দু পরিবার ২ টি। অনুষ্ঠানের সভাপতি ছিলেন ফাউন্ডেশনের চেয়ারম্যান শায়খ আহমাদুল্লাহ।</p>
-        <div class="position-relative d-flex align-items-center justify-content-center overflow-hidden rounded preview-card" 
-     style="cursor: pointer;" 
-     data-bs-toggle="modal" 
-     data-bs-target="#imageModal"
-     data-src="assets/images/Gallery.png">
-     <img src="assets/images/Gallery.png" alt="Preview Image" class="w-75">
-     <div class="hover-overlay position-absolute top-50 start-50 translate-middle text-center w-75">
-         <i class="fa-solid fa-eye fs-3 mb-2"></i>
-         <span>Preview</span>
-     </div>
+            <!-- News Text -->
+            <p class="news-text text-muted my-3 fs-5">
+                বৈষম্য বিরোধী ছাত্র আন্দোলেন শহীদ হওয়া ৩০০ পরিবারকে ১ লক্ষ করে টাকা সহায়তা করল আস-সুন্নাহ ফাউন্ডেশন। এর মধ্যে ১০৯ জন এতিমও রয়েছেন।
+            </p>
+            <p class="news-text text-muted my-3 fs-5">
+                ২৯ অক্টোবর রাজধানীর নিউ ইস্কাটনের বিয়াম মিলনায়তনে এক অনাড়ম্বরপূর্ণ অনুষ্ঠানে ৩০০ শহীদ পরিবারকে ১ লক্ষ টাকার চেক প্রদান করা হয়েছে। এর মধ্যে এতিম পরিবার ছিল ১০৯ টি, সাধারণ পরিবার ১৮৯ টি এবং হিন্দু পরিবার ২ টি। অনুষ্ঠানের সভাপতি ছিলেন ফাউন্ডেশনের চেয়ারম্যান শায়খ আহমাদুল্লাহ।
+            </p>
+
+            <!-- Image Preview -->
+            <div class="position-relative d-flex align-items-center justify-content-center overflow-hidden mb-4" style="cursor: pointer;">
+                <img src="assets/images/Gallery.png" alt="Preview Image" class="w-75 rounded">
+            </div>
+
+            <p class="news-text text-muted my-3 fs-5">
+                অনুষ্ঠানে স্বাগত বক্তব্য রাখেন আস-সুন্নাহ ফাউন্ডেশনের সাধারণ সম্পাদক সাব্বির আহমাদ। এরপর কয়েকটি শহীদ পরিবারের স্বজনদের অনুভূতি শোনা হয়। অনুভূতি প্রকাশকারীদের বেশ কয়েকজন ছিল সদ্য পিতাহারা অপ্রাপ্ত বয়স্ক এতিম শিশু। এ সময় মিলনায়তনের পরিবেশ ভারী হয়ে ওঠে।
+            </p>
+
+            <p class="news-text text-muted my-3 fs-5">
+                সভাপতির বক্তব্যে শায়খ আহমাদুল্লাহ শহীদ-স্বজনদের প্রতি গভীর সমবেদনা প্রকাশ করেন এবং তাদেরকে ধৈর্য ধারণের আহ্বান জানান। তিনি বলেন, এই প্রকল্পের জন্য আমরা কোনো তহবিল সংগ্রহ করিনি। ফাউন্ডেশনের সাধারণ তহবিল থেকে আমরা হতাহত ও শহীদ পরিবারকে অর্থ সহায়তা করেছি।
+            </p>
+
+            <!-- Image Details -->
+            <div class="position-relative d-flex align-items-center justify-content-center overflow-hidden mb-4" style="cursor: pointer;">
+                <img src="assets/images/Gallery.png" alt="Details Image" class="w-75 rounded">
+            </div>
+
+            <p class="news-text text-muted my-3 fs-5">
+                সবশেষে ৩০০ পরিবারের প্রত্যেকের কাছে ১ লক্ষ টাকার চেক হস্তান্তর করা হয়।
+            </p>
+            <p class="news-text text-muted my-3 fs-5">
+                উল্লেখ্য, ছাত্র আন্দোলনে আহত ১৪৬৯ জনকে ইতোপূর্বে ৪ কোটি ২৬ লাখ ২৫ হাজার টাকা চিকিৎসা সহায়তা প্রদান করেছে আস-সুন্নাহ ফাউন্ডেশন।
+            </p>
+        </div>
+    </div>
 </div>
 
-<div class="position-relative mt-3 d-flex align-items-center justify-content-center overflow-hidden rounded preview-card" 
-     style="cursor: pointer;" 
-     data-bs-toggle="modal" 
-     data-bs-target="#imageModal"
-     data-src="assets/images/Gallery.png">
-     <img src="assets/images/Gallery.png" alt="Preview Image" class="w-75">
-     <div class="hover-overlay position-absolute top-50 start-50 translate-middle text-center w-75">
-         <i class="fa-solid fa-eye fs-3 mb-2"></i>
-         <span>Preview</span>
-     </div>
-</div>
 
-<p class="news-text">অনুষ্ঠানে স্বাগত বক্তব্য রাখেন আস-সুন্নাহ ফাউন্ডেশনের সাধারণ সম্পাদক সাব্বির আহমাদ। 
-    এরপর কয়েকটি শহীদ পরিবারের স্বজনদের অনুভূতি শোনা হয়। অনুভূতি প্রকাশকারীদের বেশ 
-    কয়েকজন ছিল সদ্য পিতাহারা অপ্রাপ্ত বয়স্ক এতিম শিশু। এ সময় মিলনায়তনের পরিবেশ ভারী 
-    হয়ে ওঠে।</p>
 
-    <p class="news-text">সভাপতির বক্তব্যে শায়খ আহমাদুল্লাহ শহীদ-স্বজনদের প্রতি গভীর সমবেদনা প্রকাশ করেন এবং
-         তাদেরকে ধৈর্য ধারণের আহ্বান জানান। তিনি বলেন, এই প্রকল্পের জন্য আমরা কোনো তহবিল 
-         সংগ্রহ করিনি। ফাউন্ডেশনের সাধারণ তহবিল থেকে আমরা হতাহত ও শহীদ পরিবারকে অর্থ সহায়তা করেছি।</p>
-         <div class="position-relative d-flex align-items-center justify-content-center overflow-hidden rounded preview-card" 
-         style="cursor: pointer;" 
-         data-bs-toggle="modal" 
-         data-bs-target="#imageModal"
-         data-src="assets/images/Gallery.png">
-         <img src="assets/images/Gallery.png" alt="Preview Image" class="w-75">
-         <div class="hover-overlay position-absolute top-50 start-50 translate-middle text-center w-75">
-             <i class="fa-solid fa-eye fs-3 mb-2"></i>
-             <span>Preview</span>
-         </div>
-    </div>
-    
-    <div class="position-relative mt-3 d-flex align-items-center justify-content-center overflow-hidden rounded preview-card" 
-         style="cursor: pointer;" 
-         data-bs-toggle="modal" 
-         data-bs-target="#imageModal"
-         data-src="assets/images/Gallery.png">
-         <img src="assets/images/Gallery.png" alt="Preview Image" class="w-75">
-         <div class="hover-overlay position-absolute top-50 start-50 translate-middle text-center w-75">
-             <i class="fa-solid fa-eye fs-3 mb-2"></i>
-             <span>Preview</span>
-         </div>
-    </div>
 
-    <p class="news-text">সবশেষে ৩০০ পরিবারের প্রত্যেকের কাছে ১ লক্ষ টাকার চেক হস্তান্তর করা হয়।</p>
-    <p class="news-text">উল্লেখ্য, ছাত্র আন্দোলনে আহত ১৪৬৯ জনকে ইতোপূর্বে ৪ কোটি ২৬ লাখ ২৫ হাজার 
-        টাকা চিকিৎসা সহায়তা প্রদান করেছে আস-সুন্নাহ ফাউন্ডেশন।</p>
-         </div>
 
-    </div>
- </div>
+
+
+
+
+
+
 
 <!-- Footer -->
-<footer class="footer  py-4 mt-5  text-dark  border-top  shadow" style="background-color: rgba(250, 250, 250, 0.938);">
+<footer class="footer  py-4 mt-5  text-dark  shadow" style="background-color: rgba(250, 250, 250, 0.938);">
     <div class="container">
         <!-- Row with 3 columns -->
         <div class="row">
@@ -222,7 +214,7 @@
 </footer>
 
  <!-- Header Offcanvas Sidebar for Small Screens -->
- <div class="offcanvas offcanvas-start w-md-100 w-75" tabindex="-1" id="offcanvasExample">
+ <div class="offcanvas offcanvas-start w-md-100 w-75" style="z-index: 100000;" tabindex="-1" id="offcanvasExample">
     <div class="offcanvas-header shadow w-100 d-flex justify-content-center">
         <img src="assets/images/logo.png" class="offcanvas-title" alt="">
     </div>
