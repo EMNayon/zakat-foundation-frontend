@@ -52,6 +52,17 @@ body{
     color: var(--primary-color) !important;
 }
 
+.aboutdropdown ul{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0s 0.5s;
+}
+
+.aboutdropdown:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease-in-out, visibility 0s 0s;
+  }
 
 .btn-custom {
     background-color: var(--primary-color);
@@ -64,6 +75,8 @@ body{
 .btn-custom:hover {
     background-color: var(--primary-color);
 }
+
+
 
 /* global Time line design */
 .timeline {

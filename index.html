@@ -59,10 +59,16 @@
                 <i class="fa-solid fa-bars fs-4 text-dark"></i>
             </a>
 
-            <div class="collapse navbar-collapse justify-content-center d-lg-block d-none">
+            <div class="collapse navbar-collapse justify-content-center d-lg-block d-none" style="z-index: 10000000;">
                 <ul class="navbar-nav d-flex gap-lg-4">
                     <li class="nav-item"><a class="nav-link active text-success" href="index.html">হোম</a></li>
-                    <li class="nav-item"><a class="nav-link text-success" href="About.html">আমাদের সম্পর্কে</a></li>
+                    <li class="nav-item aboutdropdown"><a class="nav-link text-success" href="About.html">আমাদের সম্পর্কে <i class="ms-1 fa-solid fa-caret-down"></i></a>
+                     <ul class="position-absolute bg-white list-unstyled ms-5 shadow-sm ">
+                        <li class="nav-item"><a class="nav-link  text-success" href="BoardOfTrust.html">Board of Trust</a></li>
+                        <li class="nav-item"><a class="nav-link  text-success" href="#">Deputy Board</a></li>
+                        <li class="nav-item"><a class="nav-link  text-success" href="#"> Board Members</a></li>
+                     </ul>
+                    </li>
                     <li class="nav-item"><a class="nav-link text-success" href="ourwork.html">আমাদের কার্যক্রম</a></li>
                     <li class="nav-item"><a class="nav-link text-success" href="currentproject.html">চলমান প্রকল্প</a></li>
                     <li class="nav-item"><a class="nav-link text-success" href="Gallery.html">গ্যালারী</a></li>
@@ -78,7 +84,7 @@
 </header>
 
     <!-- Body Content -->
-    <div class="p-2" style="background-color: var(--background-color);">
+    <div class="p-2" style="background-color: var(--background-color);" style="z-index: -1;">
         <div class="container ">
             <div class="p-1">
                 <div class="row  align-items-center mt-md-3 mt-2 border rounded bg-white shadow-sm p-lg-5 p-3">
@@ -621,7 +627,20 @@
         <div class="offcanvas-body">
             <nav class="nav flex-column">
                 <a class="nav-link text-success" href="index.html">হোম</a>
-                <a class="nav-link text-success"  href="About.html">আমাদের সম্পর্কে</a>
+                
+                <!-- Dropdown for "আমাদের সম্পর্কে" -->
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-success"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        আমাদের সম্পর্কে
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item text-success" href="About.html">আমাদের সম্পর্কে</a></li>
+                        <li><a class="dropdown-item text-success" href="BoardOfTrust.html">Board of Trust</a></li>
+                        <li><a class="dropdown-item text-success" href="#">Deputy Board</a></li>
+                        <li><a class="dropdown-item text-success" href="#">Board Member</a></li>
+                    </ul>
+                </div>
+            
                 <a class="nav-link text-success" href="ourwork.html">আমাদের কার্যক্রম</a>
                 <a class="nav-link text-success" href="currentproject.html">চলমান প্রকল্প</a>
                 <a class="nav-link text-success" href="lifetime.html">আজীবন ও দাতা সদস্য</a>
@@ -629,10 +648,11 @@
                 <a class="nav-link text-success" href="video.html">ভিডিও</a>
                 <a class="nav-link text-success" href="VolunteerRegistration.html">স্বেচ্ছাসেবক নিবন্ধন</a>
                 <a class="nav-link text-success" href="News.html">সংবাদ</a>
-               <a class="nav-link text-success" href="Notice.html">নোটিশ </a>
-                <a class="nav-link  text-success" href="Report.html">রিপোর্ট </a>
+                <a class="nav-link text-success" href="Notice.html">নোটিশ</a>
+                <a class="nav-link text-success" href="Report.html">রিপোর্ট</a>
                 <a class="nav-link text-success" href="communication.html">যোগাযোগ</a>
             </nav>
+            
         </div>
     </div>
 
