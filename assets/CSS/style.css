@@ -271,7 +271,56 @@ input.form-control:focus {
     border-bottom:1px solid green;
 }
 
+/* board or trust */
 
+.owner{
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    transition: 0.5s ease-in-out;
+    background: linear-gradient(135deg, rgba(138, 231, 161, 0.788) 0%, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 1) 75%, rgba(138, 231, 161, 0.788) 100%);
+
+}
+
+.owner:hover{
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      transform: translateY(-15px);
+}
+.owscoial{
+    color: green;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: 0.5s ease-in-out;
+}
+
+.owscoial:hover{
+    background-color:green;
+    color:white;
+}
+
+.readmoreicon{
+    background-color: green;
+    color: white;
+}
+
+.readmoreicon:hover{
+    background-color: white;
+    color: green ;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+    transition: 0.5s ease-in-out;
+}
+.readmoreicon i {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0s 0.5s;
+  }
+  
+  .readmoreicon:hover i {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease-in-out, visibility 0s 0s;
+  }
+
+  
  /* Responsive Design */
  @media (min-width: 320px) and (max-width: 425px) {
         .logo img {
