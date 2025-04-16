@@ -42,16 +42,10 @@ body{
     padding: 10px 15px;
 }
 
-
-.nav-item a.active {
-    border-bottom: 2px solid var(--primary-color);
-}
-
-/* .nav-item a:hover {
-    border-bottom: 2px solid var(--primary-color);
-    color: var(--primary-color) !important;
-} */
-
+.nav-item.active-border {
+    border-bottom: 2px solid green;
+  }
+  
 .aboutdropdown ul{
     opacity: 0;
     visibility: hidden;
