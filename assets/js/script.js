@@ -133,5 +133,13 @@ function selectPayment(id) {
       }
   };
 
+// navbar border bottom
+const navItems = document.querySelectorAll('.nav-item a');
 
+  navItems.forEach(item => {
+    item.addEventListener('click', () => {
+      navItems.forEach(i => i.classList.remove('active')); // Remove from all
+      item.classList.add('active'); // Add to clicked one
+    });
+  });
   

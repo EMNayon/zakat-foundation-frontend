@@ -47,10 +47,10 @@ body{
     border-bottom: 2px solid var(--primary-color);
 }
 
-.nav-item a:hover {
+/* .nav-item a:hover {
     border-bottom: 2px solid var(--primary-color);
     color: var(--primary-color) !important;
-}
+} */
 
 .aboutdropdown ul{
     opacity: 0;
