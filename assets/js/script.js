@@ -142,8 +142,9 @@ function selectPayment(id) {
   
     if (link.getAttribute('href') === currentPage) {
       item.classList.add('active-border');
+
+      link.click();
     }
   });
-  
   
   
